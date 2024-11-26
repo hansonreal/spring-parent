@@ -17,7 +17,6 @@ import javax.annotation.Resource;
 /**
  * @author: hsr
  * @desc: TestBeanFactory
- * @since: 2024-11-12 16:39
  */
 @Slf4j
 public class TestBeanFactory {
