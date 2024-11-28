@@ -19,10 +19,10 @@ public class Lab04Application {
         GenericApplicationContext context = new GenericApplicationContext();
 
         // 向容器重注册三个Bean对象
-        context.registerBean("bean1",Bean1.class);
-        context.registerBean("bean2",Bean2.class);
-        context.registerBean("bean3",Bean3.class);
-        context.registerBean("bean4",Bean4.class);
+        context.registerBean("bean1", Lab04Bean1.class);
+        context.registerBean("bean2", Lab04Bean2.class);
+        context.registerBean("bean3", Lab04Bean3.class);
+        context.registerBean("bean4", Lab04Bean4.class);
 
 
         /**
@@ -45,7 +45,7 @@ public class Lab04Application {
         context.refresh();
 
 
-        log.info(" Bean4:{}", context.getBean(Bean4.class));
+        log.info(" Lab04Bean4:{}", context.getBean(Lab04Bean4.class));
 
 
         // 关闭容器

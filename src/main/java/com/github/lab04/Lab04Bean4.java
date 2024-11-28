@@ -12,7 +12,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @Slf4j
 @Data
 @ConfigurationProperties(prefix = "java")
-public class Bean4 {
+public class Lab04Bean4 {
     private String version;
     private String home;
 }
