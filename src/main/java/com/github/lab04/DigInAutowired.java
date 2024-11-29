@@ -13,6 +13,7 @@ import org.springframework.util.ReflectionUtils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.util.Objects;
 
 /**
  * @author: hsr
@@ -68,7 +69,7 @@ public class DigInAutowired {
 
 
         Method setBean2Method = ReflectionUtils.findMethod(Lab04Bean1.class, "setBean2", Lab04Bean2.class);
-        DependencyDescriptor dd2 = new DependencyDescriptor(new MethodParameter(setBean2Method, 0), false);
+        DependencyDescriptor dd2 = new DependencyDescriptor(new MethodParameter(Objects.requireNonNull(setBean2Method), 0), false);
         Object o2 = beanFactory.doResolveDependency(dd2, null, null, null);
         log.info("doResolveDependency:{}", o2); // 解析方法参数bean2
     }

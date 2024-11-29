@@ -16,15 +16,15 @@ import org.springframework.context.annotation.Configuration;
 @Slf4j
 @Configuration
 @ComponentScan(basePackages = "com.github.lab05.component")
-public class Config {
+public class Lab05Config {
 
     @Bean
-    public Lab05Bean1 bean1(){
+    public Lab05Bean1 bean1() {
         return new Lab05Bean1();
     }
 
     @Bean
-    public HikariDataSource dataSource(){
+    public HikariDataSource dataSource() {
         HikariConfig hikariConfig = new HikariConfig();
         hikariConfig.setUsername("root");
         hikariConfig.setPassword("root");
