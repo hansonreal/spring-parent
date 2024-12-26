@@ -8,6 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import javax.sql.DataSource;
+
 /**
  * @author: hsr
  * @desc: 配置类
@@ -34,9 +36,9 @@ public class Lab05Config {
     }
 
     @Bean
-    public SqlSessionFactoryBean sqlSessionFactoryBean(){
+    public SqlSessionFactoryBean sqlSessionFactoryBean(DataSource dataSource) {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
-        sqlSessionFactoryBean.setDataSource(dataSource());
+        sqlSessionFactoryBean.setDataSource(dataSource);
         return sqlSessionFactoryBean;
     }
 
