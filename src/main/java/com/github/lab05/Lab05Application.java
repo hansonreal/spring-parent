@@ -2,6 +2,7 @@ package com.github.lab05;
 
 import com.github.lab05.postprocessor.AtBeanPostProcessor;
 import com.github.lab05.postprocessor.ComponentScanPostProcessor;
+import com.github.lab05.postprocessor.MapperPostProcessor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.support.GenericApplicationContext;
 
@@ -24,6 +25,10 @@ public class Lab05Application {
         // 模拟Spring 框架解析 @ComponentScan、@Bean等注解
         context.registerBean(ComponentScanPostProcessor.class);
         context.registerBean(AtBeanPostProcessor.class);
+
+        // 模拟 Spring 框架解析 Mapper 接口
+        context.registerBean(MapperPostProcessor.class);
+
 
         // 添加 MapperScannerConfigurer 后置处理器 用于扫描指定包路径下的 Mapper 接口并注册到容器中 同理也会解析@MapperScanner注解
 //        context.registerBean(MapperScannerConfigurer.class, bd -> {

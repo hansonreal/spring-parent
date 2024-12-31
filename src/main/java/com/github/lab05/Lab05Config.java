@@ -39,8 +39,22 @@ public class Lab05Config {
     public SqlSessionFactoryBean sqlSessionFactoryBean(DataSource dataSource) {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(dataSource);
+
         return sqlSessionFactoryBean;
     }
 
 
+//    @Bean
+//    public MapperFactoryBean<Mapper1> mapper1(SqlSessionFactory sqlSessionFactory) {
+//        MapperFactoryBean<Mapper1> mapper1MapperFactoryBean = new MapperFactoryBean<>(Mapper1.class);
+//        mapper1MapperFactoryBean.setSqlSessionFactory(sqlSessionFactory);
+//        return mapper1MapperFactoryBean;
+//    }
+//
+//    @Bean
+//    public MapperFactoryBean<Mapper2> mapper2(SqlSessionFactory sqlSessionFactory) {
+//        MapperFactoryBean<Mapper2> mapper2MapperFactoryBean = new MapperFactoryBean<>(Mapper2.class);
+//        mapper2MapperFactoryBean.setSqlSessionFactory(sqlSessionFactory);
+//        return mapper2MapperFactoryBean;
+//    }
 }

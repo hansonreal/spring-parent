@@ -24,7 +24,7 @@ import java.util.Set;
 
 /**
  * @author: hsr
- * @desc: 模拟接卸@Bean注解的处理器
+ * @desc: 模拟解析@Bean注解的处理器
  * @since: 2024-12-19 15:26
  */
 @Slf4j
