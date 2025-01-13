@@ -1,5 +1,8 @@
 package com.github.lab04;
 
+import com.github.lab04.component.Lab04Bean1;
+import com.github.lab04.component.Lab04Bean2;
+import com.github.lab04.component.Lab04Bean3;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.PropertyValues;
 import org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor;

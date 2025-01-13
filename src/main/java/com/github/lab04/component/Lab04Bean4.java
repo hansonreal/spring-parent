@@ -1,4 +1,4 @@
-package com.github.lab04;
+package com.github.lab04.component;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;

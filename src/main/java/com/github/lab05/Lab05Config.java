@@ -1,5 +1,6 @@
 package com.github.lab05;
 
+import com.github.lab05.component.Lab05Bean1;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import lombok.extern.slf4j.Slf4j;
